@@ -154,7 +154,7 @@ def question4():
 
     answer["a"] = ['binary','qualitative','ordinal']
 
-    # Explain if there is more than one interpretation. Repeat for the other questions. At least five words that form a sentence.
+
     # The interpretation involves binary time.
     answer["a: explain"] = "Considering Time in AM/PM as Binary"
 
