@@ -199,26 +199,6 @@ def question4():
 # ----------------------------------------------------------------------
 
 
-def question5():
-    explain = {}
-
-    # Read appropriate section of book chapter 3
-
-    # string: one of 'Model 1' or 'Model 2'
-    explain["a"] = "Model 2"
-    explain["a explain"] = "Model 1 has high accuracy on A but accuracy drops on B which indicates overfitting, But for Model 2 accuracy on both Dataset A and B are almost same indicating better generalization to new data. "
-
-    # string: one of 'Model 1' or 'Model 2'
-    explain["b"] = "Model 2"
-    explain["b explain"] = "Though accuracy drops slightly Model 2 is still preferable due to better generalization observed earlier and it is less likely to overfit."
-
-    explain["c similarity"] = "Regularization"
-    explain["c similarity explain"] = "Both techniques aims to reduce overfitting by penalizing models for complexity."
-
-    explain["c difference"] = "Specificity"
-    explain["c difference explain"] = "MDL aims for a model that requires fewer bits to describe,whereas pessimistic error aims to adjust tree error to avoid complex decision tree."
-
-    return explain
 
 
 # ----------------------------------------------------------------------
