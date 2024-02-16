@@ -199,6 +199,26 @@ def question4():
 # ----------------------------------------------------------------------
 
 
+def question5():
+    explain = {}
+
+    # Read appropriate section of book chapter 3
+
+    # string: one of 'Model 1' or 'Model 2'
+    explain["a"] = "Model 2"
+    explain["a explain"] = "Model 1 has high accuracy on A but accuracy drops on B which indicates overfitting, But for Model 2 accuracy on both Dataset A and B are almost same indicating better generalization to new data. "
+
+    # string: one of 'Model 1' or 'Model 2'
+    explain["b"] = "Model 2"
+    explain["b explain"] = "Though accuracy drops slightly Model 2 is still preferable due to better generalization observed earlier and it is less likely to overfit."
+
+    explain["c similarity"] = "Regularization"
+    explain["c similarity explain"] = "Both techniques aims to reduce overfitting by penalizing models for complexity."
+
+    explain["c difference"] = "Specificity"
+    explain["c difference explain"] = "MDL aims for a model that requires fewer bits to describe,whereas pessimistic error aims to adjust tree error to avoid complex decision tree."
+
+    return explain
 
 
 # ----------------------------------------------------------------------
@@ -235,6 +255,37 @@ def question6():
 
 
 # ----------------------------------------------------------------------
+def question7():
+    answer = {}
+
+    # float
+    answer["a, info gain, ID"] = 1.0
+    answer["b, info gain, Handedness"] = 0.531
+
+    # string: "ID" or "Handedness"
+    answer["c, which attrib"] = "ID"
+
+    # answer is a float
+    answer["d, gain ratio, ID"] = 0.231
+    answer["e, gain ratio, Handedness"] = 0.531
+
+    # string: one of 'ID' or 'Handedness' based on gain ratio
+    # choose the attribute with the largest gain ratio
+    answer["f, which attrib"] = "Handedness"
+
+    return answer
+
 
 # ----------------------------------------------------------------------
 
+if __name__ == "__main__":
+    answers = {}
+    answers["q1"] = question1()
+    answers["q2"] = question2()
+    answers["q3"] = question3()
+    answers["q4"] = question4()
+    answers["q5"] = question5()
+    answers["q6"] = question6()
+    answers["q7"] = question7()
+
+    u.save_dict("answers.pkl", answers)
