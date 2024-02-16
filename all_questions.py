@@ -236,9 +236,9 @@ def question6():
     answer["a, level 3, left"] = "A"
     answer["a, level 3, right"] = "B"
 
-    # run each datum through the tree. Count the number of errors and divide by number of samples. .
-    # Since we have areas: calculate the area that is misclassified (total area is unity)
-    # float between 0 and 1
+    # when we move to right node of y =0.4
+    # we pruned the tree (2 levels) as class B, because only 6%(0.2*0.3) of A's will go through
+    # error=0.2*0.3
     answer["b, expected error"] = 0.06
 
     # Use u.BinaryTree to define the tree. Create your tree.
